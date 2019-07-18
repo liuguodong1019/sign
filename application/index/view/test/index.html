@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://laobaoteacherpc.test/public/expand/layui/css/layui.css">
+</head>
+<body>
+    <div class="layui-input-inline" style="width: 100%;text-align: center;margin-top: 5%;">
+        <input type="tel" name="phone"  class="layui-input" style="display: inline-block;width: 20%" id="username" placeholder="请输入昵称">
+        <button class="layui-btn" onclick="submit()">签到</button>
+    </div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://laobaoteacherpc.test/public/expand/layui/layui.all.js"></script>
+<script>
+    /**
+     * 发送用户签到事件
+     */
+    function submit() {
+        var username = $("#username").val();
+        $.post('http://10.3.140.139:8082/index/test/post',{'username' : username});
+    }
+</script>

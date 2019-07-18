@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://laobaoteacherpc.test/public/expand/layui/css/layui.css">
+    <style>
+        .layui-btn {
+            margin-top: 90px;
+        }
+        .layui-nav-img {
+            margin-top: 60px;
+            width: 100px;
+            height: 100px;
+        }
+        #test{
+            font-weight: bold;
+            font-size: xx-large;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="layui-wz" style="width: 100%;text-align: center;">
+    <input type="hidden" class="paging">
+    <div id="test">倒计时</div>
+    <button id="open" type = "button" class="layui-btn layui-btn-radius">开启签到</button>
+    <button id="close" type = "button" class="layui-btn layui-btn-radius">结束签到</button>
+</div>
+<div class="result">
+    <table class="handle_message">
+        <tr></tr>
+    </table>
+</div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://laobaoteacherpc.test/public/expand/layui/layui.all.js"></script>
+<script src="../../../../static/sse.js"></script>
